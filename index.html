@@ -178,67 +178,79 @@
           <div
             class="mx-auto container bg-white font-inter rounded-3xl grid grid-cols-12 my-12"
           >
-            <div class="p-8 col-span-9">
-              <!-- Heading -->
-              <div class="flex justify-between items-center">
-                <div class="flex items-center gap-4">
-                  <div>
-                    <img src="./images/bus-logo.png" alt="" />
+            <div class="p-8 col-span-12 lg:col-span-9 flex items-center">
+              <div class="w-full">
+                <!-- Heading -->
+                <div
+                  class="flex flex-col lg:flex-row justify-between items-center"
+                >
+                  <div class="flex items-center gap-4">
+                    <div>
+                      <img src="./images/bus-logo.png" alt="" />
+                    </div>
+                    <div>
+                      <h3 class="text-3xl font-bold">Sky Paribahan</h3>
+                      <p class="opacity-60 text-lg">
+                        Coach-009-WEB ! AC_Business
+                      </p>
+                    </div>
                   </div>
                   <div>
-                    <h3 class="text-3xl font-bold">Greenline Paribahan</h3>
-                    <p class="opacity-60 text-lg">
-                      Coach-009-WEB ! AC_Business
-                    </p>
+                    <button
+                      class="btn my-4 lg:my-0 text-primary-color bg-[#1DD10026]"
+                    >
+                      <span><img src="./images/seat-green.png" alt="" /></span
+                      >40 Seats left
+                    </button>
                   </div>
                 </div>
-                <div>
-                  <button class="btn text-primary-color bg-[#1DD10026]">
-                    40 Seats left
-                  </button>
-                </div>
-              </div>
 
-              <!-- Ticket details -->
-              <div class="bg-[#F7F8F8] my-6 p-8 rounded-3xl">
-                <div
-                  class="flex justify-between items-center text-lg font-semibold"
-                >
-                  <h4 class="opacity-60">Route</h4>
-                  <p>Dhaka - Sylhet</p>
-                </div>
-                <hr class="border-1 border-dashed border-[#13131833] my-3" />
-                <div
-                  class="flex justify-between items-center text-lg font-semibold"
-                >
-                  <h4 class="opacity-60">Departure Time</h4>
-                  <p>9:00 PM</p>
-                </div>
-                <hr class="border-1 border-dashed border-[#13131833] my-3" />
-                <div class="flex gap-4">
-                  <div class="bg-[#0307120D] rounded-xl w-full">
-                    <h4 class="p-4 text-center font-medium font-inter">
-                      Boarding Point - Laxmipur
-                    </h4>
+                <!-- Ticket details -->
+                <div class="bg-[#F7F8F8] my-6 p-8 rounded-3xl">
+                  <div
+                    class="flex justify-between items-center text-lg font-semibold"
+                  >
+                    <h4 class="opacity-60">Route</h4>
+                    <p>Dhaka - Sylhet</p>
                   </div>
-                  <div class="bg-[#0307120D] rounded-xl w-full">
-                    <h4 class="p-4 text-center font-medium font-inter">
-                      Dropping Point - Bogura
-                    </h4>
+                  <hr class="border-1 border-dashed border-[#13131833] my-3" />
+                  <div
+                    class="flex justify-between items-center text-lg font-semibold"
+                  >
+                    <h4 class="opacity-60">Departure Time</h4>
+                    <p>9:00 PM</p>
                   </div>
-                  <div class="bg-[#0307120D] rounded-xl w-full">
-                    <h4 class="p-4 text-center font-medium font-inter">
-                      Est. Time - 11 Hour
-                    </h4>
+                  <hr class="border-1 border-dashed border-[#13131833] my-3" />
+                  <div class="flex flex-col lg:flex-row gap-4">
+                    <div class="bg-[#0307120D] rounded-xl w-full">
+                      <h4 class="p-4 text-center font-medium font-inter">
+                        Boarding Point - Laxmipur
+                      </h4>
+                    </div>
+                    <div class="bg-[#0307120D] rounded-xl w-full">
+                      <h4 class="p-4 text-center font-medium font-inter">
+                        Dropping Point - Bogura
+                      </h4>
+                    </div>
+                    <div class="bg-[#0307120D] rounded-xl w-full">
+                      <h4 class="p-4 text-center font-medium font-inter">
+                        Est. Time - 11 Hour
+                      </h4>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-span-1">
-              <img src="./images/info-devider.png" alt="" />
+            <div class="py-7 col-span-12 lg:hidden">
+              <hr
+                class="border-1 w-full h-0.5 border-dashed border-green-600"
+              />
+            </div>
+            <div class="hidden lg:inline-block lg:col-span-1">
+              <img class="" src="./images/info-devider.png" alt="" />
             </div>
             <div
-              class="col-span-2 flex flex-col justify-center items-center pr-10"
+              class="flex flex-col justify-center items-center lg:pr-10 col-span-12 lg:col-span-2"
             >
               <img src="./images/fare.png" alt="" />
               <h4 class="font-bold text-4xl">550 Taka</h4>
