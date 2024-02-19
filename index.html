@@ -587,7 +587,9 @@
                 <div class="flex justify-between font-medium pb-3">
                   <h3>
                     Seat
-                    <span class="text-white bg-primary-color px-2 rounded-lg"
+                    <span
+                      id="seat-count"
+                      class="text-white bg-primary-color px-2 rounded-lg"
                       >0</span
                     >
                   </h3>
@@ -595,14 +597,17 @@
                   <h3>Price</h3>
                 </div>
                 <hr class="border-1 border-dashed border-[#13131833]" />
-                <div class="flex justify-between font-medium"></div>
+                <div class="">
+                  <ul id="seat-details"></ul>
+                </div>
                 <hr class="border-1 border-[#13131833]" />
                 <div class="flex justify-between font-medium">
                   <h1>Total Price</h1>
-                  <h1>BDT <span>0</span></h1>
+                  <h1>BDT <span id="total-cost">0</span></h1>
                 </div>
                 <div class="relative my-4">
                   <input
+                    id="coupon"
                     class="input lg:pr-28 w-full"
                     placeholder="Have any coupon?"
                     type="text"
@@ -617,7 +622,7 @@
                 </div>
                 <div class="flex justify-between font-medium">
                   <h1>Grand Total</h1>
-                  <h1>BDT <span>0</span></h1>
+                  <h1>BDT <span id="grand-total">0</span></h1>
                 </div>
               </div>
               <div class="font-inter space-y-5 my-5">
