@@ -83,11 +83,13 @@
           </ul>
         </div>
         <div class="navbar-end">
-          <button
-            class="btn px-8 h-auto w-auto py-3 font-bold text-xl text-primary-color bg-[#1DD1001A] border border-[#1DD10066]"
-          >
-            Bus <span><img src="./images/bus-icon.png" alt="" /></span>
-          </button>
+          <a href="#buy"
+            ><button
+              class="btn px-8 h-auto w-auto py-3 font-bold text-xl text-primary-color bg-[#1DD1001A] border border-[#1DD10066]"
+            >
+              Bus
+              <span><img src="./images/bus-icon.png" alt="" /></span></button
+          ></a>
         </div>
       </div>
     </header>
@@ -262,9 +264,11 @@
           </div>
         </div>
         <!-- Select Your Seat Section -->
-        <div class="mx-auto container bg-white p-8 rounded-3xl my-12">
+        <div
+          class="mx-auto container bg-white p-8 rounded-3xl my-12 gap-5 lg:flex"
+        >
           <!-- left Part -->
-          <div>
+          <div class="lg:w-3/5">
             <div>
               <h3 class="font-semibold text-2xl">Select Your Seat</h3>
               <hr class="border-1 border-dashed border-[#13131833] my-3" />
@@ -572,9 +576,88 @@
               </div>
             </div>
           </div>
-          <div class=""></div>
+          <div class="border border-dashed"></div>
+          <!-- Right part -->
+          <div class="lg:w-2/5">
+            <!-- Pricing section -->
+            <div>
+              <h3 class="font-semibold text-2xl">Select Your Seat</h3>
+              <hr class="border-1 border-dashed border-[#13131833] my-3" />
+              <div class="bg-[#F7F8F8] rounded-xl p-8 font-inter">
+                <div class="flex justify-between font-medium pb-3">
+                  <h3>
+                    Seat
+                    <span class="text-white bg-primary-color px-2 rounded-lg"
+                      >0</span
+                    >
+                  </h3>
+                  <h3>Class</h3>
+                  <h3>Price</h3>
+                </div>
+                <hr class="border-1 border-dashed border-[#13131833]" />
+                <div class="flex justify-between font-medium"></div>
+                <hr class="border-1 border-[#13131833]" />
+                <div class="flex justify-between font-medium">
+                  <h1>Total Price</h1>
+                  <h1>BDT <span>0</span></h1>
+                </div>
+                <div class="relative my-4">
+                  <input
+                    class="input lg:pr-28 w-full"
+                    placeholder="Have any coupon?"
+                    type="text"
+                  />
+                  <div class="absolute top-1 right-2 h-10">
+                    <button
+                      class="btn border-white text-white bg-primary-color min-h-8 h-10 box-border"
+                    >
+                      Apply
+                    </button>
+                  </div>
+                </div>
+                <div class="flex justify-between font-medium">
+                  <h1>Grand Total</h1>
+                  <h1>BDT <span>0</span></h1>
+                </div>
+              </div>
+              <div class="font-inter space-y-5 my-5">
+                <div class="space-y-2">
+                  <h1 class="font-semibold">Passenger Name*</h1>
+                  <input
+                    class="input border border-[#0307121A] w-full"
+                    placeholder="Enter your name"
+                    type="text"
+                  />
+                </div>
+                <div class="space-y-2">
+                  <h1 class="font-semibold">Phone Number*</h1>
+                  <input
+                    class="input border border-[#0307121A] w-full"
+                    placeholder="Enter your phone number"
+                    type="number"
+                  />
+                </div>
+                <div class="space-y-2">
+                  <h1 class="font-semibold">Email ID</h1>
+                  <input
+                    class="input border border-[#0307121A] w-full"
+                    placeholder="Enter your email id"
+                    type="email"
+                  />
+                </div>
+                <button class="btn text-white bg-primary-color w-full">
+                  Next
+                </button>
+                <div class="flex justify-evenly">
+                  <a class="underline text-[#03071299]">Terms and Conditions</a>
+                  <a class="underline text-[#03071299]">Cancellation Policy</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
