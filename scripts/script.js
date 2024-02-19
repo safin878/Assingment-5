@@ -17,7 +17,12 @@ for (const btn of allBtn) {
       return;
     }
     seat.classList.add("bg-primary-color");
-
+    let disabled = document.getElementById("button");
+    let numb = document.getElementById("seat-count").innerText;
+    // console.log(parseInt(numb));
+    if (parseInt(numb) === 3) {
+      disabled.removeAttribute("disabled");
+    }
     let seatName = e.target.innerText;
     let selectedContainer = document.getElementById("seat-details");
     const li = document.createElement("li");
@@ -40,10 +45,25 @@ for (const btn of allBtn) {
     totalCost("total-cost", parseInt(p3.innerText));
     GrandTotalCost("grand-total", parseInt(p3.innerText));
     setInnerText("seat-count", count);
-    let disabled = document.getElementById("button");
-    console.log(count);
-    if (count === 4) {
-      disabled.removeAttribute(disabled);
+    document
+      .getElementById("coupon-texts")
+      .addEventListener("keyup", function (e) {
+        const text = e.target.value;
+        console.log(text);
+        let next = document.getElementById("pop-up");
+        let n = document.getElementById("seat-count").innerText;
+        let numbers = document.getElementById("coupon-texts").value;
+        console.log(numbers);
+        if (parseInt(n) != 0 && numbers !== "") {
+          next.removeAttribute("disabled");
+        }
+      });
+    let next = document.getElementById("pop-up");
+    let n = document.getElementById("seat-count").innerText;
+    let numbers = document.getElementById("coupon-texts").value;
+    // console.log(numbers);
+    if (numbers !== "") {
+      next.removeAttribute("disabled");
     }
   });
 }

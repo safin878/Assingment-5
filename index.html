@@ -618,6 +618,7 @@
                       id="button"
                       onclick="validation()"
                       class="btn border-white text-white bg-primary-color min-h-8 h-10 box-border"
+                      disabled
                     >
                       Apply
                     </button>
@@ -640,6 +641,7 @@
                 <div class="space-y-2">
                   <h1 class="font-semibold">Phone Number*</h1>
                   <input
+                    id="coupon-texts"
                     class="input border border-[#0307121A] w-full"
                     placeholder="Enter your phone number"
                     type="number"
@@ -655,8 +657,10 @@
                 </div>
                 <!-- Open the modal using ID.showModal() method -->
                 <button
+                  id="pop-up"
                   class="btn text-white bg-primary-color w-full"
                   onclick="my_modal_2.showModal()"
+                  disabled
                 >
                   Next
                 </button>
