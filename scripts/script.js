@@ -5,6 +5,16 @@ let count = 0;
 for (const btn of allBtn) {
   btn.addEventListener("click", function (e) {
     count += 1;
+    let seat = e.target;
+    if (seat.classList.contains("bg-primary-color")) {
+      alert("You Clicked This Item Again");
+      return;
+    }
+    if (count >= 5) {
+      alert();
+      return;
+    }
+    seat.classList.add("bg-primary-color");
 
     let seatName = e.target.innerText;
     let selectedContainer = document.getElementById("seat-details");
@@ -18,15 +28,36 @@ for (const btn of allBtn) {
     li.appendChild(p);
     li.appendChild(p2);
     li.appendChild(p3);
-
-    const i = selectedContainer.appendChild(li);
-    i.classList.add("flex", "justify-between", "text-[#03071299]");
+    const display = selectedContainer.appendChild(li);
+    display.classList.add("flex", "justify-between", "text-[#03071299]");
+    let availableSeat = document.getElementById("available-seat").innerText;
+    let convertedSeat = parseInt(availableSeat);
+    convertedSeat -= 1;
+    setInnerText("available-seat", convertedSeat);
     totalCost("total-cost", parseInt(p3.innerText));
     GrandTotalCost("grand-total", parseInt(p3.innerText));
     setInnerText("seat-count", count);
   });
 }
+
+// let validation = code();
+// if (validation === "NEW15") {
+//   console.log("matched");
+// } else "not matching";
+// function code(e) {
+//   //   console.log(e.target.parentNode.parentNode.childNodes[1].value);
+//   return e.target.parentNode.parentNode.childNodes[1].value;
+// }
+// const btn = document.getElementById("coupon-button");
+// btn.addEventListener("click", code);
 // shared styles
+
+// document
+//   .getElementById("coupon-button")
+//   .addEventListener("click", function couponCodeText(e) {
+//     return e.target.parentNode.parentNode.childNodes[1].value;
+//   });
+
 function totalCost(id, value) {
   let totalCost = document.getElementById(id).innerText;
   let convertedTotalCost = parseInt(totalCost);
