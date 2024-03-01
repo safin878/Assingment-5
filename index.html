@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sky-Ticket</title>
+    <link
+      rel="shortcut icon"
+      href="./images/bus-icon.png"
+      type="image/x-icon"
+    />
     <!-- Daisy UI and Tailwind css link -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
@@ -38,9 +43,9 @@
       }
     </style>
   </head>
-  <body class="font-raleway p-4 lg:p-0">
+  <body class="font-raleway">
     <!-- Navbar codes -->
-    <header class="container mx-auto py-5">
+    <header class="container mx-auto py-5 p-4 lg:p-0">
       <div class="navbar p-0 bg-base-100">
         <div class="navbar-start">
           <div class="dropdown">
@@ -93,7 +98,7 @@
         </div>
       </div>
     </header>
-    <main>
+    <main class="p-4 lg:p-0">
       <!-- Banner Section -->
       <section
         class="container mx-auto flex flex-col justify-center items-center bg-[url('./images/banner.png')] bg-no-repeat bg-cover bg-[h-full] h-[40rem] rounded-3xl bg-center"
@@ -113,8 +118,48 @@
           </button></a
         >
       </section>
+
+      <!-- Desing Section -->
+
+      <section
+        class="flex container mx-auto gap-8 lg:-translate-y-24 flex-col lg:flex-row p-16"
+      >
+        <div
+          class="w-full h-[7rem] rounded-2xl border-primary-color border-b-2 flex gap-4 justify-center items-center bg-white"
+        >
+          <div><img src="./images/people.png" /></div>
+
+          <div class="font-inter">
+            <h1 class="font-extrabold text-3xl">500K+</h1>
+            <p>Registered users</p>
+          </div>
+        </div>
+
+        <div
+          class="w-full h-[7rem] rounded-2xl border-primary-color border-b-2 flex gap-4 justify-center items-center bg-white"
+        >
+          <div><img src="./images/ticket-cupon.png" /></div>
+
+          <div class="font-inter">
+            <h1 class="font-extrabold text-3xl">1.7 lacks</h1>
+            <p>Tickets sold</p>
+          </div>
+        </div>
+
+        <div
+          class="w-full h-[7rem] rounded-2xl border-primary-color border-b-2 flex gap-4 justify-center items-center bg-white"
+        >
+          <div><img src="./images/stoppage.png" /></div>
+
+          <div class="font-inter">
+            <h1 class="font-extrabold text-3xl">80K+</h1>
+            <p>Rental partners</p>
+          </div>
+        </div>
+      </section>
+
       <!-- Best offers section -->
-      <section class="container mx-auto my-24">
+      <section class="container mx-auto my-24 lg:-mt-16 mt-0">
         <h2 class="text-4xl font-bold text-center">Best offers for you</h2>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 my-8 font-inter">
           <!-- First Coupon Code -->
@@ -167,7 +212,7 @@
       <!-- Tickets Buy Section -->
       <section
         id="buy"
-        class="bg-[#F7F8F8] rounded-t-[5.5rem] border-t-2 border-primary-color"
+        class="bg-[#F7F8F8] rounded-t-[5.5rem] pb-10 border-t-2 border-primary-color"
       >
         <!-- Ticket information -->
         <div>
@@ -264,9 +309,7 @@
           </div>
         </div>
         <!-- Select Your Seat Section -->
-        <div
-          class="mx-auto container bg-white p-8 rounded-3xl my-12 gap-5 lg:flex"
-        >
+        <div class="mx-auto container bg-white p-8 rounded-3xl gap-5 lg:flex">
           <!-- left Part -->
           <div class="lg:w-3/5">
             <div>
@@ -700,6 +743,25 @@
         </div>
       </section>
     </main>
+    <footer class="p-10 bg-[#030712] text-neutral-content">
+      <div class="container mx-auto footer justify-between">
+        <aside>
+          <h3 class="text-4xl font-bold">P-Ticket</h3>
+          <p>
+            P-Ticket is a digital platform to make your <br />
+            daily commuting better.
+          </p>
+        </aside>
+        <nav>
+          <h6 class="text-xl font-bold">Download App</h6>
+          <img src="./images/Play.svg" alt="" />
+        </nav>
+      </div>
+      <hr class="border-gray-400 border-dashed my-6 container mx-auto" />
+      <aside class="footer-center p-4 text-white">
+        <p>Copyright © 2024 - P-Ticket services limited.</p>
+      </aside>
+    </footer>
     <script src="./scripts/script.js"></script>
   </body>
 </html>
